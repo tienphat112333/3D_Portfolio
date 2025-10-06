@@ -74,7 +74,7 @@ const WorkExperienceTimeline = ({ experiences }) => {
                   className="w-6 h-6"
                 />
               </div>
-              <span className="mt-2 text-sm text-gray-500 w-[190px] text-center">
+              <span className="mt-2 text-sm text-gray-500 w-[200px] text-center">
                 {exp.date}
               </span>
             </motion.div>

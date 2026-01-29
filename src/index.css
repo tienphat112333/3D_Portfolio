@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-worksans: "Work Sans", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+
+  --color-gray-200: #D5DAE1;
+  --color-black: #000;
+  --color-black-500: #1D2235;
+  --color-blue-500: #2b77e7;
+
+  --shadow-card: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
 
 :root {
   --blue-rgb: 237 245 255;
@@ -27,11 +37,13 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug;
+    font-family: var(--font-poppins);
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-semibold sm:text-3xl text-xl relative;
+    font-family: var(--font-poppins);
   }
 
   .blue-gradient_text {
@@ -63,7 +75,11 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
-    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
+    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl pt-4 pb-12 px-8;
+    background: #2b77e7;
+    border-radius: 10px;
+    box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
+      0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
   }
 
   .neo-btn {

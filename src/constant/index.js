@@ -1,4 +1,11 @@
-import { meta, shopify, starbucks, tesla, titancorp } from "../assets/images";
+import {
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  titancorp,
+  ac_jsc,
+} from "../assets/images";
 import {
   car,
   contact,
@@ -89,11 +96,11 @@ export const skills = [
     name: "React",
     type: "Frontend",
   },
-  // {
-  //   imageUrl: redux,
-  //   name: "Redux",
-  //   type: "State Management",
-  // },
+  {
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
+  },
   {
     imageUrl: sass,
     name: "Sass",
@@ -123,6 +130,19 @@ export const experiences = [
       "Assisted in integrating APIs and implementing page routing, ensuring smooth data flow between front-end and back-end.",
       "Worked closely with senior developers to improve layout consistency, responsive behavior, and code structure.",
       "Gained hands-on experience with version control, collaborative workflow, and front-end optimization techniques.",
+    ],
+  },
+  {
+    title: "Intern Frontend Developer",
+    company_name: "Apps Cyclone Technology JSC",
+    icon: ac_jsc,
+    iconBg: "#accbe1",
+    date: "December 2025 - january 2026",
+    points: [
+      "Developed and optimized responsive web interfaces using React.js and Tailwind CSS, ensuring high-quality UI/UX across various devices.",
+      "Integrated RESTful APIs to handle dynamic data rendering and improved application performance.",
+      "Participated in daily stand-ups and code reviews with the development team to ensure code quality and adhere to project timelines.",
+      "Resolved UI bugs and cross-browser compatibility issues, enhancing the overall user experience of the product.",
     ],
   },
   // {
